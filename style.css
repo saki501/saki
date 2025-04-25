@@ -1,0 +1,237 @@
+/* 全体設定 */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  color: #333;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 7rem;  /* 👈 ここで文字サイズを調整 */
+  font-weight: bold;  /* お好みで太字にする */
+}
+
+
+
+h2 {
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  color: #333;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 2rem;  /* 👈 ここで文字サイズを調整 */
+  font-weight: bold;  /* お好みで太字にする */
+}
+
+/* ヒーローセクション */
+.hero {
+  background-image: url('images/header-image.jpg');  /* 画像のパス */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;  /* 画面全体ではなく少し小さめに設定 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  padding-top: 60px;  /* 上部に少し余白を追加 */
+}
+
+.hero-content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* 背景の色を少し濃くして目立たせる */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.hero h1, .hero p {
+  color: #fff;  /* 白色でテキストを目立たせる */
+}
+
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  background-color: #FF6F61;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FF3E2D;
+  transform: translateY(-5px);
+}
+
+
+
+
+
+/* ナビゲーション */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #FF6F61;
+}
+
+/* セクション */
+.section {
+  padding: 4rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* フレックスコンテナ */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* 画像のサイズ調整 */
+.flex-container img {
+  width: 100%;
+  max-width: 48%;  /* 画像が横並びになるように最大幅を設定 */
+  height: 300px;   /* 高さを固定（お好みの高さに変更可能） */
+  object-fit: cover;  /* 画像が切れないように調整 */
+  border-radius: 10px;
+}
+
+.flex-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+/* フッター */
+footer {
+  background-color: #333; /* 背景色を暗いグレーに */
+  color: white; /* 文字色を白に */
+  text-align: center; /* 中央寄せ */
+  padding: 2rem 0; /* 上下に余白をつける */
+  font-size: 1rem; /* フォントサイズを小さめに */
+  margin-top: 3rem; /* 上に少し余白 */
+}
+
+footer p {
+  margin: 0; /* パラグラフの上下マージンを削除 */
+}
+
+/* フッター内リンクのスタイル */
+footer a {
+  color: white; /* リンクは白色 */
+  text-decoration: none; /* リンクの下線を削除 */
+  transition: color 0.3s ease; /* 色が変わるアニメーション */
+}
+
+footer a:hover {
+  color: #FF6F61; /* ホバー時に色を変更（オレンジ色） */
+}
+
+
+
+
+
+
+/* ヘッダーの背景画像 */
+.hero {
+  background-image: url('images/header-image.jpg');  /* 画像のパス */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;  /* 画面全体を占める */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* 背景の色でテキストを目立たせる */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.header-logo {
+  max-width: 200px;  /* ロゴ画像の最大幅 */
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* お問い合わせセクション */
+#contact {
+  padding: 4rem 1.5rem;
+  background-color: #f7f7f7;
+}
+
+.ota-links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.ota-link {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: #FF6F61;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.ota-link:hover {
+  background-color: #FF3E2D;
+  transform: translateY(-5px);
+}
+
+.ota-link img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
